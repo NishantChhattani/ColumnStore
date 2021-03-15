@@ -57,7 +57,7 @@ public class Condition {
 
 		assert (operand1 != null);
 
-		// But operand2 could be null
+		// But operand2 could be null !!!
 
 		if (operand2 == null) {
 			//result = storedValue.eval(operand1);

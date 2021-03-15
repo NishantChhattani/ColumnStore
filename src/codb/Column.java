@@ -2,11 +2,12 @@
  * 
  */
 package codb;
-import java.util.ArrayList;
-import java.util.Iterator;
 
 import SciLib.Math.bitStream;
 import codb.query.Condition;
+
+import java.util.ArrayList;
+import java.util.Iterator;
 
 /**
  * @author rchandra
