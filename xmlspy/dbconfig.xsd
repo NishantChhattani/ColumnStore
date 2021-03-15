@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2006 rel. 3 sp1 (http://www.altova.com) by R. Chandrashekar (Hewlett Packard Globalsoft Ltd.) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="dbconfig">
+		<xs:annotation>
+			<xs:documentation>Comment describing your root element</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="dbname"/>
+				<xs:element name="projectionList">
+					<xs:complexType>
+						<xs:sequence maxOccurs="unbounded">
+							<xs:element name="projection">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="projName"/>
+										<xs:element name="anchorTable"/>
+										<xs:element name="columnList">
+											<xs:complexType>
+												<xs:sequence maxOccurs="unbounded">
+													<xs:element name="column">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element name="colURI"/>
+																<xs:element name="filePath"/>
+																<xs:element name="dataType">
+																	<xs:simpleType>
+																		<xs:restriction base="xs:string">
+																			<xs:pattern value="stringColumn"/>
+																			<xs:pattern value="numberColumn"/>
+																		</xs:restriction>
+																	</xs:simpleType>
+																</xs:element>
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="sortKey">
+											<xs:complexType>
+												<xs:sequence maxOccurs="unbounded">
+													<xs:element name="colURI"/>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
