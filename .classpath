@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="com/altova/|com/" kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/Users/Yashasvi/Downloads/ColumnStore_ReferenceImplementation/ColumnStore/lib/scilib.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Yashasvi/Downloads/ColumnStore_ReferenceImplementation/ColumnStore/lib/configxml.jar"/>
+	<classpathentry kind="output" path="classes"/>
+</classpath>
